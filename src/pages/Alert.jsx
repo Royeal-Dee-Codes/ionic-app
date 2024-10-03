@@ -1,6 +1,16 @@
+import React from "react";
 import { IonAlert, IonButton } from "@ionic/react";
 
-function Example() {
+function Alert() {
+  const handleDismiss = (event) => {
+    const selectedColor = event.detail.data.values;
+    if (selectedColor) {
+      console.log(`Selected color: ${selectedColor}`);
+    } else {
+      console.log("No color was selected");
+    }
+  };
+
   return (
     <>
       <IonButton id="present-alert">Click Me</IonButton>
@@ -35,8 +45,9 @@ function Example() {
             value: "rainbow",
           },
         ]}
+        onDidDismiss={(event) => handleDismiss(event)}
       ></IonAlert>
     </>
   );
 }
-export default Example;
+export default Alert;
