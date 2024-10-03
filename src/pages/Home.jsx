@@ -30,6 +30,7 @@ const Home = () => {
             <h1>Welcome to Ionic React App</h1>
             <p>
               This app showcases different Ionic components with custom styling.
+              <br />
               Use the tabs to navigate between pages.
             </p>
           </IonCardContent>

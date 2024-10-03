@@ -137,3 +137,7 @@ ion-radio {
   --color: #4f3139;
   --color-checked: #ff91af;
 }
+
+.native-input.sc-ion-input-md {
+  padding-top: 20px;
+}
