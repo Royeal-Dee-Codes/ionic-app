@@ -1,2 +1,138 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
+:root {
+  --ion-color-primary: #ff91af;
+  --ion-color-primary-rgb: 255, 145, 175;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #e080a6;
+  --ion-color-primary-tint: #ff9cb7;
+
+  --ion-background-color: #784754;
+  --ion-background-color-rgb: 120, 71, 84;
+
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
+
+  --ion-color-step-50: #815965;
+  --ion-color-step-100: #8a6b76;
+  --ion-color-step-150: #937d87;
+  --ion-color-step-200: #9c8f98;
+  --ion-color-step-250: #a5a1a9;
+  --ion-color-step-300: #aeb3ba;
+  --ion-color-step-350: #b7c5cb;
+  --ion-color-step-400: #c0d7dc;
+  --ion-color-step-450: #c9e9ed;
+  --ion-color-step-500: #d2fbfe;
+  --ion-color-step-550: #dbfdff;
+  --ion-color-step-600: #e4feff;
+  --ion-color-step-650: #edffff;
+  --ion-color-step-700: #f6ffff;
+  --ion-color-step-750: #ffffff;
+  --ion-color-step-800: #ffffff;
+  --ion-color-step-850: #ffffff;
+  --ion-color-step-900: #ffffff;
+  --ion-color-step-950: #ffffff;
+
+  --ion-item-background: #6d414d;
+
+  --ion-card-background: #6d414d;
+
+  --ion-toolbar-background: #4f3139;
+  --ion-tab-bar-background: #4f3139;
+
+  --ion-border-color: #4f3139;
+}
+
+.home-page-image {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-content-container h2 .custom-border {
+  border: 2px solid #4f3139;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.centered-card {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.centered-list {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ion-content {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+}
+
+ion-card-header {
+  text-align: center;
+}
+
+ion-card-content {
+  text-align: center;
+}
+
+ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-item {
+  --border-color: #4f3139;
+  --highlight-color-focused: #ff91af;
+}
+
+ion-card {
+  border: 2px solid #4f3139;
+}
+
+ion-button {
+  --background: #ff91af;
+  --background-activated: #e080a6;
+  --color: #000000;
+}
+
+ion-checkbox {
+  --border-color: #4f3139;
+  --background-checked: #ff91af;
+  --checkmark-color: #000000;
+}
+
+ion-toggle {
+  --background: #4f3139;
+  --background-checked: #ff91af;
+  --handle-background: #ffffff;
+}
+
+ion-radio {
+  --color: #4f3139;
+  --color-checked: #ff91af;
+}
