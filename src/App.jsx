@@ -10,7 +10,15 @@ import {
   setupIonicReact,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { list, card, create, home, alert, arrowDown } from "ionicons/icons";
+import {
+  list,
+  card,
+  create,
+  home,
+  alert,
+  arrowDown,
+  body,
+} from "ionicons/icons";
 
 import Home from "./pages/Home";
 import List from "./pages/List";
@@ -18,6 +26,7 @@ import Card from "./pages/Card";
 import Form from "./pages/Form";
 import Alert from "./pages/Alert";
 import Accordian from "./pages/Accordian";
+import Modal from "./pages/Modal";
 
 import "@ionic/react/css/core.css";
 
@@ -59,6 +68,9 @@ const App = () => (
           <Route path="/accordian">
             <Accordian />
           </Route>
+          <Route path="/modal">
+            <Modal />
+          </Route>
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
@@ -87,6 +99,10 @@ const App = () => (
           <IonTabButton tab="accordian" href="/accordian">
             <IonIcon icon={arrowDown} />
             <IonLabel>Accordian</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="modal" href="/modal">
+            <IonIcon icon={body} />
+            <IonLabel>Modal</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
